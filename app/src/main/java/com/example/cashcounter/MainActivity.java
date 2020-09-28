@@ -366,6 +366,9 @@ public class MainActivity extends AppCompatActivity{
 
 
 
+
+
+
                 String s=Integer.toString(count);
                 notes.setText(s);
             }
