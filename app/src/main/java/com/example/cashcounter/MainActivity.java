@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -348,29 +349,21 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
-
-
-
-
         cal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-
-                     count=Integer.parseInt(twothou.getText()+"")+Integer.parseInt(fivehun.getText()+"")+
-                            Integer.parseInt(twohun.getText()+"")+Integer.parseInt(onehun.getText()+"")+
-                            Integer.parseInt(fifty.getText()+"")+Integer.parseInt(twenty.getText()+"")+
-                            Integer.parseInt(ten.getText()+"")+Integer.parseInt(five.getText()+"")+
-                            Integer.parseInt(two.getText()+"")+Integer.parseInt(one.getText()+"");
-                    Log.i("TAG", Integer.parseInt(twothou.getText()+"")+"onCreate: ");
-
-
-
+                count=Integer.parseInt(twothou.getText()+"")+Integer.parseInt(fivehun.getText()+"")+
+                        Integer.parseInt(twohun.getText()+"")+Integer.parseInt(onehun.getText()+"")+
+                        Integer.parseInt(fifty.getText()+"")+Integer.parseInt(twenty.getText()+"")+
+                        Integer.parseInt(ten.getText()+"")+Integer.parseInt(five.getText()+"")+
+                        Integer.parseInt(two.getText()+"")+Integer.parseInt(one.getText()+"");
 
 
 
                 String s=Integer.toString(count);
                 notes.setText(s);
+                total.setText(Integer.toString(grand));
             }
         });
     }
