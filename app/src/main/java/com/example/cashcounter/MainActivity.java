@@ -56,6 +56,7 @@ public class MainActivity extends AppCompatActivity{
         cal=findViewById(R.id.cal);
 
 
+
         twothou.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
