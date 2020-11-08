@@ -353,18 +353,66 @@ public class MainActivity extends AppCompatActivity{
         cal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                int two2000=0,five100=0,two200=0,one100=0,f50=0,t20=0,t10=0,f5=0,t2=0,o1=0;
 
-                count=Integer.parseInt(twothou.getText()+"")+Integer.parseInt(fivehun.getText()+"")+
-                        Integer.parseInt(twohun.getText()+"")+Integer.parseInt(onehun.getText()+"")+
-                        Integer.parseInt(fifty.getText()+"")+Integer.parseInt(twenty.getText()+"")+
-                        Integer.parseInt(ten.getText()+"")+Integer.parseInt(five.getText()+"")+
-                        Integer.parseInt(two.getText()+"")+Integer.parseInt(one.getText()+"");
+                try {
+                    two2000=Integer.parseInt(twothou.getText()+"");
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    five100=Integer.parseInt(fivehun.getText()+"");
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    two200=Integer.parseInt(twohun.getText()+"");
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    one100=Integer.parseInt(onehun.getText()+"");
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    f50=Integer.parseInt(fifty.getText()+"");
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    t20=Integer.parseInt(twenty.getText()+"");
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    t10=Integer.parseInt(ten.getText()+"");
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    f5=Integer.parseInt(five.getText()+"");
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    t2=Integer.parseInt(two.getText()+"");
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
+                }
+                try {
+                    o1=Integer.parseInt(one.getText()+"");
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
+                }
 
-
+                count=two2000+five100+two200+one100+f50+t20+t10+f5+t2+o1;
+                grand=two2000*2000+five100*500+two200*200+one100*100+f50*50+t20*20+t10*10+f5*5+t2*2+o1;
 
                 String s=Integer.toString(count);
                 notes.setText(s);
-                total.setText(Integer.toString(grand));
+                total.setText(grand+"");
+
             }
         });
     }
